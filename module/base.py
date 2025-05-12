@@ -1,7 +1,6 @@
 import logging
 from enum import Enum
 from typing import Any, Optional
-import urllib.parse
 
 import requests
 
@@ -41,7 +40,7 @@ class ApiClient:
             params=params,
             json=json,
         )
-        
+
         logger.warning(res.text)
 
         return res

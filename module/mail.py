@@ -14,7 +14,5 @@ class Mail(ApiClient):
 
     def verify_email(self, email: str):
         return self._send_request(
-            uri=f"{self.uri}/{email}",
-            method=RequestMethod.GET,
-            headers=self.headers
+            uri=f"{self.uri}/{email}", method=RequestMethod.GET, headers=self.headers
         )
