@@ -51,3 +51,9 @@
 - Expected all return format should be `False`
 
 note: all test data are random generate and using lambda and Pytest parametrize to make variety
+
+### Test result
+
+- ![Allure report](./result/api.png)
+
+note: one case failed might due to the domain shouldn't be on the blocklist.
