@@ -59,7 +59,7 @@ class TestMail:
         "email", [generate_valid_email(True), generate_valid_email(False)]
     )
     def test_valid_mail_format(self, mail_client, email):
-        logging.warning(f"Verify the email {email}...")
+        logging.info(f"Verify the email {email}...")
         res = mail_client.verify_email(email=email)
 
         assert res.status_code == 200, res.text
@@ -84,7 +84,7 @@ class TestMail:
         [(lambda: generate_valid_email(is_disposable=False))() for _ in range(3)],
     )
     def test_non_disposable_mail(self, mail_client, email):
-        logging.warning(f"Verify the email {email}...")
+        logging.info(f"Verify the email {email}...")
         res = mail_client.verify_email(email=email)
 
         assert res.status_code == 200, res.text
