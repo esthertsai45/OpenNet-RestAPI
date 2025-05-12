@@ -1,0 +1,8 @@
+allure-pytest==2.13.5
+pytest==8.3.4
+selenium==4.32.0
+black==24.3.0
+flake8==7.0.0
+mypy==1.14.0
+requests==2.32.3
+disposable-email-domains==0.0.126
